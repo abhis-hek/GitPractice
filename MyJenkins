@@ -9,6 +9,7 @@ pipeline {
         }
         stage('test') {
             steps {
+                bat 'node hello'
                 echo 'Testing'
             }
         }
